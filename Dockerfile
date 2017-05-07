@@ -6,7 +6,14 @@
 #
 # You can run using this:
 #
-# docker run -d -v /data/minecraft/data:/data -p 19132:19132/udp --name minecraft cscheide/minecraft-pe
+# Start in headless mode
+# 	docker run -d -v /data/minecraft/data:/data -p 19132:19132/udp --name minecraft cscheide/minecraft-pe
+#
+# Start in interactive mode
+# 	docker start -ai minecraft
+#
+# Start creating new data
+# 	docker run -d -p 19132:19132/udp --name minecraft cscheide/minecraft-pe
 #
 
 FROM php:7-cli
@@ -52,7 +59,7 @@ RUN ln -s /data/banned-ips.txt /minecraft/banned-ips.txt && \
 EXPOSE 19132/udp
 
 # Set up the volume for the data
-VOLUME /data 
+VOLUME /data
 
 # Run the app when launched
 CMD [ "bash", "/minecraft/start.sh", "--no-wizard"]

@@ -14,13 +14,13 @@ To learn how to use PocketMine-MP, please visit their [documentation site](http:
 
 To start with no mapped data, simple utilize the docker run command below. This will launch a new container with the default data present.
 
-`docker run -d -p 19132:19132/udp --name minecraft cscheide/minecraft-pe:latest`
+`docker run -d -p 19132:19132/udp --name minecraft cscheide/pocketmine-mp:latest`
 
 ### Starting while persisting data
 
 To persist data, ensure your configuration and data files are present in a volume and map a volume to `/data`.
 
-`docker run -d -v /your/directory/with/data:/data -p 19132:19132/udp --name minecraft cscheide/minecraft-pe:latest`
+`docker run -d -v /your/directory/with/data:/data -p 19132:19132/udp --name minecraft cscheide/pocketmine-mp:latest`
 
 See the data management section below for more detail.
 

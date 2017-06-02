@@ -7,13 +7,13 @@
 # You can run using this:
 #
 # Start in headless mode
-# 	docker run -d -v /data/minecraft/data:/data -p 19132:19132/udp --name minecraft cscheide/minecraft-pe
+# 	docker run -d -v /data/minecraft/data:/data -p 19132:19132/udp --name minecraft cscheide/pocketmine-mp
 #
 # Start in interactive mode
 # 	docker start -ai minecraft
 #
 # Start creating new data
-# 	docker run -d -p 19132:19132/udp --name minecraft cscheide/minecraft-pe
+# 	docker run -d -p 19132:19132/udp --name minecraft cscheide/pocketmine-mp
 #
 
 FROM php:7-cli

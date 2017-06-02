@@ -39,3 +39,14 @@ Since PocketMine-MP relies on some static data to configure and store informatio
 
 To persist your data, simply map a volume to `/data` when you launch the container.
 
+## How to Update To Latest Version
+
+This image is updated when I perform the build to DockerHub. At present the current version supported is:
+
+To update to the latest version yourself you can either follow the [Manual Update Instructions](https://pmmp.readthedocs.io/en/rtfd/update.html#) or you can simple download a copy of the [PocketMine-MP Docker Container](https://github.com/crscheid/pocketmine-mp) from GitHub and build the image yourself. This process will automatically grab the latest version.
+
+`docker build --no-cache -t your-image-name pocketmine-mp/.`
+
+Then run the above commands utilizing your own image.
+
+`docker run -d -p 19132:19132/udp --name minecraft your-image-name`

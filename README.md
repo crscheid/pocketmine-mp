@@ -4,7 +4,7 @@
 
 This is a dockerized version of the [PocketMine-MP server](https://www.pmmp.io/) written in PHP, a highly customisable, open source server software for Minecraft: Pocket Edition written in PHP. More documentation regarding the server itself can be found at their website directly.
 
-The current version supported is: 1.6.2dev-ALPHA6
+The current version supported is: 1.7dev-501_66562f24_API-3.0.0-ALPHA10
 
 ## How to use PocketMine-MP
 

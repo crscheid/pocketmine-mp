@@ -2,9 +2,11 @@
 
 # [![PocketMine-MP](http://cdn.pocketmine.net/img/PocketMine-MP-h.png)](https://pmmp.io)
 
+Supported tags: `latest`
+
 This is a dockerized version of the [PocketMine-MP server](https://www.pmmp.io/) written in PHP, a highly customisable, open source server software for Minecraft: Pocket Edition written in PHP. More documentation regarding the server itself can be found at their website directly.
 
-The current version supported is: 1.7dev-501_66562f24_API-3.0.0-ALPHA10
+The current version supported is: PocketMine-MP 1.7dev-516 with API 3.0.0-ALPHA10
 
 ## How to use PocketMine-MP
 
@@ -25,6 +27,16 @@ To persist data, ensure your configuration and data files are present in a volum
 `docker run -d -v /your/directory/with/data:/data -p 19132:19132/udp --name minecraft cscheide/pocketmine-mp:latest`
 
 See the data management section below for more detail.
+
+### Starting in a terminal that you can reattach to
+
+To start the server with a TTY that you can reconnect to later
+
+`docker run -ti -p 19132:19132/udp --name minecraft cscheide/pocketmine-mp:latest`
+
+When you are done with your session, type `Ctrl-P` followed by `Ctrl-Q`. To reattach to the session use
+
+`docker attach minecraft`
 
 ## Data Management
 

@@ -42,7 +42,10 @@ RUN touch /data/banned-ips.txt && \
 	touch /data/ops.txt && \
 	mkdir -p /data/players && \
 	touch /data/white-list.txt && \
-	mkdir -p /data/worlds
+	mkdir -p /data/worlds && \
+	mkdir -p /data/plugins && \
+	mkdir -p /data/resource_packs && \
+	touch /data/server.log
 
 # Move the configuration items out of the main directory and sym link items back
 RUN ln -s /data/banned-ips.txt /minecraft/banned-ips.txt && \
@@ -52,7 +55,10 @@ RUN ln -s /data/banned-ips.txt /minecraft/banned-ips.txt && \
 	ln -s /data/pocketmine.yml /minecraft/pocketmine.yml && \
 	ln -s /data/server.properties /minecraft/server.properties && \
 	ln -s /data/white-list.txt /minecraft/white-list.txt && \
-	ln -s /data/worlds /minecraft/worlds
+	ln -s /data/worlds /minecraft/worlds && \
+	ln -s /data/plugins /minecraft/plugins && \
+	ln -s /data/resource_packs /minecraft/resource_packs && \
+	ln -s /data/server.log /minecraft/server.log
 
 
 # Expose the right port

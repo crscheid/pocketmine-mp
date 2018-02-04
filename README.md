@@ -6,7 +6,7 @@ Supported tags: `latest`
 
 This is a dockerized version of the [PocketMine-MP server](https://www.pmmp.io/) written in PHP, a highly customisable, open source server software for Minecraft: Pocket Edition written in PHP. More documentation regarding the server itself can be found at their website directly.
 
-The current version supported is: PocketMine-MP 1.7dev-516 with API 3.0.0-ALPHA10
+The current version in the built image: PocketMine-MP 1.7dev-516 with API 3.0.0-ALPHA10 [Github Release](https://github.com/pmmp/PocketMine-MP/releases/tag/1.7dev-516)
 
 ## How to use PocketMine-MP
 
@@ -47,6 +47,8 @@ Since PocketMine-MP relies on some static data to configure and store informatio
 * `ops.txt`
 * `players` directory
 * `worlds` directory
+* `plugins` directory
+* `resource_packs` directory
 * `pocketmine.yml`
 * `server.properties`
 * `white-list.txt`
@@ -63,4 +65,4 @@ To update to the latest version yourself you can either follow the [Manual Updat
 
 Then run the above commands utilizing your own image.
 
-`docker run -d -p 19132:19132/udp --name minecraft your-image-name`
+`docker run -d -p 19132:19132/udp --name minecraft --restart unless-stopped your-image-name`

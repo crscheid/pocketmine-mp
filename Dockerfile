@@ -28,9 +28,7 @@ RUN apt-get update && \
 WORKDIR /minecraft
 
 # Run the install
-RUN wget -q -O - https://get.pmmp.io > web_install.sh && \
-	chmod 700 web_install.sh && \
-	bash web_install.sh -r
+RUN wget -q -O - https://get.pmmp.io | bash -s - -r
 
 # Add the custom properties from our docker project
 ADD server.properties /data/server.properties

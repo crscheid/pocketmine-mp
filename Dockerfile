@@ -16,19 +16,30 @@
 # 	docker run -d -p 19132:19132/udp --name minecraft cscheide/pocketmine-mp
 #
 
-FROM php:7-cli
+FROM ubuntu:latest
 
 MAINTAINER Christopher Scheidel <christopher.scheidel@gmail.com>
 
+# Install dependencies
 RUN apt-get update && \
 	apt-get -y install wget && \
-	mkdir -p /data /minecraft
+	rm -rf /var/lib/apt/lists/*
 
-# Work
+# Make the directory we will need
+RUN	mkdir -p /data /minecraft
 WORKDIR /minecraft
 
-# Run the install
-RUN wget -q -O - https://get.pmmp.io | bash -s - -r
+# Grab the pre-built PHP 7.2 distribution from PMMP
+RUN wget -q -O - https://jenkins.pmmp.io/job/PHP-7.2-Aggregate/lastSuccessfulBuild/artifact/PHP-7.2-Linux-x86_64.tar.gz > /minecraft/PHP-7.2-Linux-x86_64.tar.gz && \
+  cd /minecraft && \
+	tar -xvf PHP-7.2-Linux-x86_64.tar.gz
+
+# Grab the latest Alpha PHAR
+RUN wget -q -O - https://jenkins.pmmp.io/job/PocketMine-MP/Alpha/artifact/PocketMine-MP.phar > /minecraft/PocketMine-MP.phar
+
+# Grab the start script and make it executable
+RUN wget -q -O - https://raw.githubusercontent.com/pmmp/PocketMine-MP/master/start.sh > /minecraft/start.sh && \
+  chmod +x /minecraft/start.sh
 
 # Add the custom properties from our docker project
 ADD server.properties /data/server.properties

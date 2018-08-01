@@ -2,20 +2,19 @@
 
 # [![PocketMine-MP](http://cdn.pocketmine.net/img/PocketMine-MP-h.png)](https://pmmp.io)
 
-Supported tags: `latest`, `3.1`, `3.1.1`
+Supported tags: `latest`, `3.1`, `3.1.2`
 
 This is a dockerized version of the [PocketMine-MP server](https://www.pmmp.io/) written in PHP, a highly customisable, open source server software for Minecraft: Pocket Edition written in PHP. More documentation regarding the server itself can be found at their website directly.
 
 ## Versions
 
-The current version is PocketMine-MP 3.1.1 [Github Release](https://github.com/pmmp/PocketMine-MP/releases/tag/3.1.1)
+The current version is PocketMine-MP 3.1.2 [Github Release](https://github.com/pmmp/PocketMine-MP/releases/tag/3.1.2)
 
 Versions of this Docker image are tracked against PocketMine-MP's versioning scheme. Since this is not an official PocketMine-MP project, there may be a lag between new version releases of PocketMine-MP and this image.
 
 ## Contributing
 
 If you wish to contribute to this Docker image definition, please submit an issue and a pull request here or follow the discussion on the open issue on PocketMine-MP:  [Create Docker container for easier distribution](https://github.com/pmmp/PocketMine-MP/issues/928)
-
 
 ## How to use PocketMine-MP
 

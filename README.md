@@ -1,34 +1,40 @@
 # PocketMine-MP Docker Container
 
+# Supported tags and respective `Dockerfile` links
+
+* `3.1.5`, `3.1` [(3.1/Dockerfile)](https://raw.githubusercontent.com/crscheid/pocketmine-mp/master/3.1/Dockerfile)
+* `3.2.0`, `3.2`, `latest` [(3.2/Dockerfile)](https://raw.githubusercontent.com/crscheid/pocketmine-mp/master/3.2/Dockerfile)
+
 # [![PocketMine-MP](http://cdn.pocketmine.net/img/PocketMine-MP-h.png)](https://pmmp.io)
 
-Supported tags: `latest`, `3.1`, `3.1.4`
 
-This is a dockerized version of the [PocketMine-MP server](https://www.pmmp.io/) written in PHP, a highly customisable, open source server software for Minecraft: Pocket Edition written in PHP. More documentation regarding the server itself can be found at their website directly.
+This is a Docker image of the [PocketMine-MP server](https://www.pmmp.io/) written in PHP, a highly customizable, open source server software for Minecraft: Pocket Edition written in PHP. More documentation regarding the server itself can be found at the [PMMP website](https://www.pmmp.io/) directly.
 
-## Versions
+# Versions
 
-The current version is PocketMine-MP 3.1.4 [Github Release](https://github.com/pmmp/PocketMine-MP/releases/tag/3.1.4)
+The current version is PocketMine-MP 3.2.0 [Github Release](https://github.com/pmmp/PocketMine-MP/releases/tag/3.2.0)
 
 Versions of this Docker image are tracked against PocketMine-MP's versioning scheme. Since this is not an official PocketMine-MP project, there may be a lag between new version releases of PocketMine-MP and this image.
 
-## Contributing
+The `latest` image will always track the most recent release.
+
+# Contributing
 
 If you wish to contribute to this Docker image definition, please submit an issue and a pull request here or follow the discussion on the open issue on PocketMine-MP:  [Create Docker container for easier distribution](https://github.com/pmmp/PocketMine-MP/issues/928)
 
-## How to use PocketMine-MP
+# How to use PocketMine-MP
 
 To learn how to use PocketMine-MP, please visit their [documentation site](http://pmmp.readthedocs.org/). This image definition is not meant to replace the great documentation that the PocketMine team has already provided.
 
 ## How to use this Docker image
 
-### Starting with default data
+## Starting with default data
 
 To start with no mapped data, simple utilize the docker run command below. This will launch a new container with the default data present.
 
 `docker run -d -p 19132:19132/udp --name minecraft cscheide/pocketmine-mp:latest`
 
-### Starting with existing data
+## Starting with existing data
 
 To persist data, ensure your configuration and data files are present in a volume and map a volume to `/data`.
 
@@ -36,7 +42,7 @@ To persist data, ensure your configuration and data files are present in a volum
 
 See the data management section below for more detail.
 
-### Starting in a terminal that you can reattach to
+## Starting in a terminal that you can reattach to
 
 To start the server with a TTY that you can reconnect to later
 
@@ -46,7 +52,7 @@ When you are done with your session, type `Ctrl-P` followed by `Ctrl-Q`. To reat
 
 `docker attach minecraft`
 
-## Data Management
+# Data Management
 
 Since PocketMine-MP relies on some static data to configure and store information about the world, this image assumes the presence of a data volume located at `/data` which expects the following:
 
@@ -76,7 +82,7 @@ The above commands will copy the default data out of the container named "minecr
 
 **Important Note**: Periodically, PocketMine-MP will release new features that require/expect new data items. If you are using your own data folder, these may not be present and may cause errors. If you suspect this to be the case you can always create a fresh container and compare your files to the default files in the /data folder.
 
-## How to Update To Latest Version
+# How to Update To Latest Version
 
 This image is automatically updated when there are pushes to the `master` branch or when there are versions tagged from the (source repository)[https://github.com/crscheid/pocketmine-mp].
 

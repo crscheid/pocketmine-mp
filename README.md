@@ -29,13 +29,13 @@ To learn how to use PocketMine-MP, please visit their [documentation site](http:
 
 ## How to use this Docker image
 
-## Starting with default data
+### Starting with default data
 
 To start with no mapped data, simple utilize the docker run command below. This will launch a new container with the default data present.
 
 `docker run -d -p 19132:19132/udp --name minecraft cscheide/pocketmine-mp:latest`
 
-## Starting with existing data
+### Starting with existing data
 
 To persist data, ensure your configuration and data files are present in a volume and map a volume to `/data`.
 
@@ -43,7 +43,7 @@ To persist data, ensure your configuration and data files are present in a volum
 
 See the data management section below for more detail.
 
-## Starting in a terminal that you can reattach to
+### Starting in a terminal that you can reattach to
 
 To start the server with a TTY that you can reconnect to later
 
@@ -53,7 +53,7 @@ When you are done with your session, type `Ctrl-P` followed by `Ctrl-Q`. To reat
 
 `docker attach minecraft`
 
-# Data Management
+## Data Management
 
 Since PocketMine-MP relies on some static data to configure and store information about the world, this image assumes the presence of a data volume located at `/data` which expects the following:
 
@@ -83,7 +83,7 @@ The above commands will copy the default data out of the container named "minecr
 
 **Important Note**: Periodically, PocketMine-MP will release new features that require/expect new data items. If you are using your own data folder, these may not be present and may cause errors. If you suspect this to be the case you can always create a fresh container and compare your files to the default files in the /data folder.
 
-# How to Update To Latest Version
+## How to Update To Latest Version
 
 This image is automatically updated when there are pushes to the `master` branch or when there are versions tagged from the (source repository)[https://github.com/crscheid/pocketmine-mp].
 

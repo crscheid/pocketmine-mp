@@ -2,7 +2,7 @@
 
 # Supported tags and respective `Dockerfile` links
 
-* `3.0.12`, `3.0` [(3.0/Dockerfile)](https://github.com/crscheid/pocketmine-mp/blob/master/3.0.Dockerfile)
+* `3.0.12`, `3.0` [(3.0/Dockerfile)](https://github.com/crscheid/pocketmine-mp/blob/master/3.0/Dockerfile)
 * `3.1.5`, `3.1` [(3.1/Dockerfile)](https://github.com/crscheid/pocketmine-mp/blob/master/3.1/Dockerfile)
 * `3.2.0`, `3.2`, `latest` [(3.2/Dockerfile)](https://github.com/crscheid/pocketmine-mp/blob/master/3.2/Dockerfile)
 

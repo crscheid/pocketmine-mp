@@ -5,6 +5,7 @@
 - Reorganized directory to track multiple versions
 - Updated to (Release 3.2.0)[https://github.com/pmmp/PocketMine-MP/releases/tag/3.2.0]
 - Updated CHANGELOG.md and README.md
+- Added build script for local building
 
 ## Version 3.1.4
 

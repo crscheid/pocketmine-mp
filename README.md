@@ -1,5 +1,3 @@
-# PocketMine-MP Docker Container
-
 # Supported tags and respective `Dockerfile` links
 
 * `3.0.12`, `3.0` [(3.0/Dockerfile)](https://github.com/crscheid/pocketmine-mp/blob/master/3.0/Dockerfile)
@@ -11,7 +9,7 @@
 
 This is a Docker image of the [PocketMine-MP server](https://www.pmmp.io/) written in PHP, a highly customizable, open source server software for Minecraft: Pocket Edition written in PHP. More documentation regarding the server itself can be found at the [PMMP website](https://www.pmmp.io/) directly.
 
-# Versions
+## Versions
 
 The current version is PocketMine-MP 3.2.0 [Github Release](https://github.com/pmmp/PocketMine-MP/releases/tag/3.2.0)
 
@@ -19,11 +17,11 @@ Versions of this Docker image are tracked against PocketMine-MP's versioning sch
 
 The `latest` image will always track the most recent release.
 
-# Contributing
+## Contributing
 
 If you wish to contribute to this Docker image definition, please submit an issue and a pull request here or follow the discussion on the open issue on PocketMine-MP:  [Create Docker container for easier distribution](https://github.com/pmmp/PocketMine-MP/issues/928)
 
-# How to use PocketMine-MP
+## How to use PocketMine-MP
 
 To learn how to use PocketMine-MP, please visit their [documentation site](http://pmmp.readthedocs.org/). This image definition is not meant to replace the great documentation that the PocketMine team has already provided.
 
@@ -85,7 +83,7 @@ The above commands will copy the default data out of the container named "minecr
 
 ## How to Update To Latest Version
 
-This image is automatically updated when there are pushes to the `master` branch or when there are versions tagged from the (source repository)[https://github.com/crscheid/pocketmine-mp].
+This image is automatically updated when there are pushes to the `master` branch or when there are versions tagged from the [source repository](https://github.com/crscheid/pocketmine-mp).
 
 First, pull the latest image down with Docker.
 

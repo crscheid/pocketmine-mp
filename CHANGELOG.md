@@ -1,5 +1,11 @@
 # PocketMine-MP Docker Container ChangeLog
 
+## Version 3.2.2 / Version 3.1.6
+
+- Updated to (Release 3.2.2)[https://github.com/pmmp/PocketMine-MP/releases/tag/3.2.2]
+- Updated CHANGELOG.md and README.md
+
+
 ## Version 3.2.0 / Version 3.1.5 / Version 3.0.12
 
 - Reorganized directory to track multiple versions

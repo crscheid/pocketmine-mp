@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
 * `3.0.12`, `3.0` [(3.0/Dockerfile)](https://github.com/crscheid/pocketmine-mp/blob/master/3.0/Dockerfile)
-* `3.1.6`, `3.1` [(3.1/Dockerfile)](https://github.com/crscheid/pocketmine-mp/blob/master/3.1/Dockerfile)
-* `3.2.2`, `3.2`, `latest` [(3.2/Dockerfile)](https://github.com/crscheid/pocketmine-mp/blob/master/3.2/Dockerfile)
+* `3.1.7`, `3.1` [(3.1/Dockerfile)](https://github.com/crscheid/pocketmine-mp/blob/master/3.1/Dockerfile)
+* `3.2.3`, `3.2`, `latest` [(3.2/Dockerfile)](https://github.com/crscheid/pocketmine-mp/blob/master/3.2/Dockerfile)
 
 # [![PocketMine-MP](http://cdn.pocketmine.net/img/PocketMine-MP-h.png)](https://pmmp.io)
 
@@ -11,7 +11,7 @@ This is a Docker image of the [PocketMine-MP server](https://www.pmmp.io/) writt
 
 ## Versions
 
-The current version is PocketMine-MP 3.2.2 [Github Release](https://github.com/pmmp/PocketMine-MP/releases/tag/3.2.2)
+The current version is PocketMine-MP 3.2.3 [Github Release](https://github.com/pmmp/PocketMine-MP/releases/tag/3.2.3)
 
 Versions of this Docker image are tracked against PocketMine-MP's versioning scheme. Since this is not an official PocketMine-MP project, there may be a lag between new version releases of PocketMine-MP and this image.
 

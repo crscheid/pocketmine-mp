@@ -36,7 +36,7 @@ RUN wget -q -O - https://jenkins.pmmp.io/job/PHP-7.2-Aggregate/lastSuccessfulBui
 	rm PHP-7.2-Linux-x86_64.tar.gz
 
 # Grab the Specific version PHAR
-RUN wget -q -O - https://github.com/pmmp/PocketMine-MP/releases/download/3.2.4/PocketMine-MP.phar > /minecraft/PocketMine-MP.phar
+RUN wget -q -O - https://github.com/pmmp/PocketMine-MP/releases/download/3.2.5/PocketMine-MP.phar > /minecraft/PocketMine-MP.phar
 
 # Grab the start script and make it executable
 RUN wget -q -O - https://raw.githubusercontent.com/pmmp/PocketMine-MP/master/start.sh > /minecraft/start.sh && \

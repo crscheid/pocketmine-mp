@@ -29,11 +29,11 @@ RUN apt-get update && \
 RUN	mkdir -p /data /minecraft
 WORKDIR /minecraft
 
-# Grab the pre-built PHP 7.2 distribution from PMMP
-RUN wget -q -O - https://jenkins.pmmp.io/job/PHP-7.2-Aggregate/lastSuccessfulBuild/artifact/PHP-7.2-Linux-x86_64.tar.gz > /minecraft/PHP-7.2-Linux-x86_64.tar.gz && \
+# Grab the pre-built PHP 7.3 distribution from PMMP
+RUN wget -q -O - https://jenkins.pmmp.io/job/PHP-7.3-Aggregate/lastSuccessfulBuild/artifact/PHP-7.3-Linux-x86_64.tar.gz > /minecraft/PHP-7.3-Linux-x86_64.tar.gz && \
   cd /minecraft && \
-	tar -xvf PHP-7.2-Linux-x86_64.tar.gz && \
-	rm PHP-7.2-Linux-x86_64.tar.gz
+	tar -xvf PHP-7.3-Linux-x86_64.tar.gz && \
+	rm PHP-7.3-Linux-x86_64.tar.gz
 
 # Grab the Specific version PHAR
 RUN wget -q -O - https://github.com/pmmp/PocketMine-MP/releases/download/3.6.1/PocketMine-MP.phar > /minecraft/PocketMine-MP.phar

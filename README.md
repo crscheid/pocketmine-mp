@@ -1,3 +1,5 @@
+**NOTE: This project is now archived. There is an official Docker build of the PocketMine-MP server available on Docker hub here: https://hub.docker.com/r/pmmp/pocketmine-mp**
+
 # Supported tags and respective `Dockerfile` links
 
 * `3.6.1`, `3.6`, [(3.6/Dockerfile)](https://github.com/crscheid/pocketmine-mp/blob/master/3.6/Dockerfile)
